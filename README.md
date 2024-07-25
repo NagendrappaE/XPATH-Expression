@@ -68,6 +68,13 @@ b) boolean(name(//Body/executeFinacleScriptResponse/executeFinacleScript_CustomD
 a) number(boolean(name(//Body/executeFinacleScriptResponse/executeFinacleScript_CustomData/TrnId1)))   output;0
 b)number(boolean(name(//Body/executeFinacleScriptResponse/executeFinacleScript_CustomData/TrnId)))   output:1
 
-
+4.comparision:
+a)number(boolean(name(//Body/executeFinacleScriptResponse/executeFinacleScript_CustomData/TrnId1)))=1   output:false
+b)number(boolean(name(//Body/executeFinacleScriptResponse/executeFinacleScript_CustomData/TrnId)))=1     output:true
+c) number(boolean(name(//Body/executeFinacleScriptResponse/executeFinacleScript_CustomData/TrnId1)))=1 and 2=1    output:false
+d)number(boolean(name(//Body/executeFinacleScriptResponse/executeFinacleScript_CustomData/TrnId1)))=1 and 2=2   output:false
+e)number(boolean(name(//Body/executeFinacleScriptResponse/executeFinacleScript_CustomData/TrnId1)))=1 and 2=2
+f)number(boolean(name(//Body/executeFinacleScriptResponse/executeFinacleScript_CustomData/TrnId)))=1 and 2=2   output:true
+g)number(boolean(name(//Body/executeFinacleScriptResponse/executeFinacleScript_CustomData/TrnId)))=1 and 2=3 output:false
 
 
