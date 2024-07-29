@@ -103,6 +103,8 @@ j)concat('NA',//RequestMessageKey/*[local-name()='RequestUUID'],'QQ',string(-0),
 k)concat('NA',//RequestMessageKey/*[local-name()='RequestUUID'],'QQ',string(-0),not(//NAA),number(not(//GG)))  output:NAXXXXXXX_USR_172180017283107QQ0true1
 l)concat('NA',//RequestMessageKey/*[local-name()='RequestUUID'],'QQ',string(-0),not(//NAA),number(not(//GG))=1)   output:NAXXXXXXX_USR_172180017283107QQ0truetrue 
 m)//*[local-name()='HostTransaction']/*[local-name()='Status']='SUCCESS'   output:true
+n)//*[local-name()='HostTransaction']/*[local-name()='Status'][text()='SUCCESS']/ancestor::*[local-name()='Header']/following-sibling::*[local-name()='Body']/*[local-name()='executeFinacleScriptResponse']/*[local-name()='executeFinacleScript_CustomData']/*[local-name()='TrnId']
+
 
 
 
