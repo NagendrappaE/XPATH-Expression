@@ -83,8 +83,17 @@ a) //HostTransaction/descendant::*     output: SUCCESS
 b) //ResponseMessageInfo/descendant::* output:   XXXX
 GMT+05:30
 2024-07-24T11:19:45.873
-
 c)//ResponseMessageInfo/descendant::BankId  output:XXXX
 d)//ResponseMessageInfo/ancestor::*   output:disaplyas all ancestors 
+
+6.String function:
+
+a)string('ee')   output: ee
+b)string(2)  output:2
+c)string(-0) output:0
+d)concat('x','sss','ty',3,'5677')   output: xsssty35677
+e) //RequestMessageKey/*[local-name()='RequestUUID']    output:XXXXXXX_USR_172180017283107
+
+
 
 
