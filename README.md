@@ -105,6 +105,13 @@ l)concat('NA',//RequestMessageKey/*[local-name()='RequestUUID'],'QQ',string(-0),
 m)//*[local-name()='HostTransaction']/*[local-name()='Status']='SUCCESS'   output:true
 n)//*[local-name()='HostTransaction']/*[local-name()='Status'][text()='SUCCESS']/ancestor::*[local-name()='Header']/following-sibling::*[local-name()='Body']/*[local-name()='executeFinacleScriptResponse']/*[local-name()='executeFinacleScript_CustomData']/*[local-name()='TrnId']
 
+output:XXXXXXXX
+
+o)//*[local-name()='HostTransaction']/*[local-name()='Status'][text()='SUCCESS1' or 1=1]/ancestor::*[local-name()='Header']/following-sibling::*[local-name()='Body']/*[local-name()='executeFinacleScriptResponse']/*[local-name()='executeFinacleScript_CustomData']/*[local-name()='TrnId']
+ output:XXXXXXXX
+p)//*[local-name()='HostTransaction']/*[local-name()='Status'][text()='SUCCESS1' or 1=3]/ancestor::*[local-name()='Header']/following-sibling::*[local-name()='Body']/*[local-name()='executeFinacleScriptResponse']/*[local-name()='executeFinacleScript_CustomData']/*[local-name()='TrnId']
+
+output:  
 
 
 
