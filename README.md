@@ -93,6 +93,18 @@ b)string(2)  output:2
 c)string(-0) output:0
 d)concat('x','sss','ty',3,'5677')   output: xsssty35677
 e) //RequestMessageKey/*[local-name()='RequestUUID']    output:XXXXXXX_USR_172180017283107
+f)concat('NA',//RequestMessageKey/*[local-name()='RequestUUID'])  output: NAXXXXXXX_USR_172180017283107
+g)concat('NA',//RequestMessageKey/*[local-name()='RequestUUID'],'QQ',string())  output:NAXXXXXXX_USR_172180017283107QQ XXXXXXX_USR_172180017283107 executeFinacleScript 10.2 XXX XXXX GMT+05:30 2024-07-24T11:19:45.873 SUCCESS
+
+h)concat('NA',//RequestMessageKey/*[local-name()='RequestUUID'],'QQ',string(-0))  output:NAXXXXXXX_USR_172180017283107QQ0
+
+i)concat('NA',//RequestMessageKey/*[local-name()='RequestUUID'],'QQ',string(-0),not(//NAA))   output: NAXXXXXXX_USR_172180017283107QQ0true
+j)concat('NA',//RequestMessageKey/*[local-name()='RequestUUID'],'QQ',string(-0),not(//NAA),number(//GG))  output:NAXXXXXXX_USR_172180017283107QQ0trueNaN
+k)concat('NA',//RequestMessageKey/*[local-name()='RequestUUID'],'QQ',string(-0),not(//NAA),number(not(//GG)))  output:NAXXXXXXX_USR_172180017283107QQ0true1
+l)concat('NA',//RequestMessageKey/*[local-name()='RequestUUID'],'QQ',string(-0),not(//NAA),number(not(//GG))=1)   output:NAXXXXXXX_USR_172180017283107QQ0truetrue 
+m)//*[local-name()='HostTransaction']/*[local-name()='Status']='SUCCESS'   output:true
+
+
 
 
 
