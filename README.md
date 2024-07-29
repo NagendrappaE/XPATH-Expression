@@ -78,3 +78,13 @@ f)number(boolean(name(//Body/executeFinacleScriptResponse/executeFinacleScript_C
 g)number(boolean(name(//Body/executeFinacleScriptResponse/executeFinacleScript_CustomData/TrnId)))=1 and 2=3 output:false
 
 
+5.XML Pathaxes:
+a) //HostTransaction/descendant::*     output: SUCCESS
+b) //ResponseMessageInfo/descendant::* output:   XXXX
+GMT+05:30
+2024-07-24T11:19:45.873
+
+c)//ResponseMessageInfo/descendant::BankId  output:XXXX
+d)//ResponseMessageInfo/ancestor::*   output:disaplyas all ancestors 
+
+
